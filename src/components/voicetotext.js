@@ -45,7 +45,7 @@ const VoiceToText = () => {
 
   const handleQuery = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/query', { query: transcript });
+      const res = await axios.post('https://smartcard-backend-of7n.onrender.com', { query: transcript });
       setResponse(res.data.response);
     } catch (error) {
       console.error(error);
